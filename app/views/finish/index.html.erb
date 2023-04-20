@@ -1,0 +1,25 @@
+
+<table>
+    <tr>
+        <th>出勤</th>
+        <th>退勤</th>
+    </tr>
+    <tr>
+        <th><%= render "users/index" %></th>
+        <th>
+            <% @finish_times.each do |finish_time| %>
+                <ul>
+                    <li>
+                        <p><%= finish_time.created_at %></p>
+                    </li>
+                </ul>
+                
+            <% end %>
+        </th>
+    </tr>
+
+
+
+
+</table>
+

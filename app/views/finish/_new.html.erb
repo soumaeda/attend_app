@@ -1,0 +1,11 @@
+
+
+<%= form_with model: @finish_time, url: new_finish_path do |f| %>
+  <%= f.label :end_time, "退勤時間：" %>
+  <%= f.datetime_select :end_time %>
+  
+  <%= f.submit '退勤' %>
+<% end %>
+
+
+

@@ -1,0 +1,26 @@
+<h1>Homes#top</h1>
+<p>Find me in app/views/homes/top.html.erb</p>
+<%= Time.now.strftime("%Y年%m月%d日 %H:%M:%S") %>
+
+<div id="clock"></div>
+
+<span id="text"></span>
+
+  <script type="text/javascript">
+  document.getElementById("text").innerHTML = showTime();
+  
+  function showTime() {
+    var now = new Date();
+    var nowhour = now.getHours();
+    var nowminutes = now.getMinutes();
+    var nowseconds = now.getSeconds();
+  
+    var text = nowhour + "：" + nowminutes + "：" + nowseconds; 
+    
+    return text;
+  }
+  </script>
+  
+<%= @attend_time %>
+
+
