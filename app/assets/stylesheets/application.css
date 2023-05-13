@@ -1,2 +1,29 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.category {
+    background-color: #c0c0c0;
+    color: #fff;
+
+}    
+
+h1 {
+    margin-bottom: 10px 
+}
+
+ul {
+    list-style: none;
+}
+
+.category ul {
+    display: flex;
+    margin: 0 20px 0 auto;
+}
+
+.category ul li {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white ; 
+}
+
+
