@@ -10,7 +10,7 @@
             <% @finish_times.each do |finish_time| %>
                 <ul>
                     <li>
-                        <p><%= finish_time.created_at %></p>
+                        <p><%= finish_time.created_at.strftime('%Y/%m/%d　%H:%M') %></p>
                     </li>
                 </ul>
                 
