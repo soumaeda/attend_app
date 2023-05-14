@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  timestamp: 2023-05-14 16:26:51
+  start_time: 2023-05-14 16:26:51
+  user_id: 1
+
+two:
+  timestamp: 2023-05-14 16:26:51
+  start_time: 2023-05-14 16:26:51
+  user_id: 1

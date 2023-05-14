@@ -22,6 +22,7 @@ class FinishController < ApplicationController
   def index
      @finish_times = current_user.finishes
      @user = current_user.updated_at
+     @start_times = current_user.starts
   end
 
   private

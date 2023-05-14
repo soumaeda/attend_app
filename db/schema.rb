@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_20_142305) do
+ActiveRecord::Schema.define(version: 2023_05_14_162651) do
 
   create_table "finishes", force: :cascade do |t|
     t.datetime "timestamp"
@@ -18,6 +18,14 @@ ActiveRecord::Schema.define(version: 2023_04_20_142305) do
     t.datetime "updated_at", precision: 6, null: false
     t.datetime "end_time"
     t.integer "user_id"
+  end
+
+  create_table "starts", force: :cascade do |t|
+    t.datetime "timestamp"
+    t.datetime "start_time"
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
