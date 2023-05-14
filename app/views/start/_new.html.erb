@@ -1,0 +1,7 @@
+
+<%= form_with model: @start_time, url: new_start_path do |f| %>
+  <%= f.label :start_time, "出勤時間：" %>
+  <%= f.datetime_select :start_time %>
+  
+  <%= f.submit '出勤' %>
+<% end %>
