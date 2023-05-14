@@ -2,7 +2,7 @@
 <% @start_times.each do |start_time| %>
     <ul>
         <li>
-            <p><%= start_time.created_at %></p>
+            <p><%= start_time.created_at.strftime('%Y/%m/%d　%H:%M') %></p>
         </li>
     </ul>
     
