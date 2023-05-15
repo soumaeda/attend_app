@@ -1,10 +1,11 @@
 
-<p>ログインして出勤！</p>
+<h3>ログインして出勤！</h3>
+<br>
 <%= Time.now.strftime("%Y年%m月%d日") %>
+<br />
+<div id="clock" class="h3"></div>
 
-<div id="clock"></div>
 
-<span id="text"></span>
 
   <script type="text/javascript">
   document.getElementById("text").innerHTML = showTime();
@@ -21,6 +22,6 @@
   }
   </script>
   
-<%= @attend_time %>
+
 
 
